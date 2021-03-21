@@ -1,0 +1,76 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <link href="fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="css/nav-style.css" rel="stylesheet">
+
+</head>
+    <body>
+      <div class="bg-dark">
+      <div class="container">
+      <nav class="navbar navbar-dark navbar-expand-sm">
+      <a class="navbar-brand navbar-left logo" href="#">
+       Logo here
+      </a>
+      
+        <button class="navbar-toggler"   onclick="openNav()"  type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+   
+      <div class="nav-middle collapse navbar-collapse" id="mySidenav" class="sidenav">       
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>       
+      </div>
+     
+        
+      <div>
+      <i class="fas fa-phone-alt mob-icon"></i>
+        <a href="#">
+          <p class="need-help"><span>Need Help?</span></br>
+            +9123456677</p>        
+        </a>
+      </div>
+    </nav>  
+  </div>
+</div>
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+
+
+
+      
+    </body>
+</html>
